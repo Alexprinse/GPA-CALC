@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="covert grades to GPA">
+    <meta name="keywords" content="HTML,CSS,JavaScript">
+    <meta charset="UTF-8">
+    <title>GPA CALCULATOR</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="rg (1).png">
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="banner">
+        <h1 onclick="main()">RGUKT GPA CALCULATOR</h1>
+    </div>
+    <main>
+    <div class="content" style="text-align: center;">
+        <label for="select-option">Select SEM:</label>
+        <select id="select-option">
+            <option value="none">----</option>
+            <option value="option1">SEM 1</option>
+            <option value="option2">SEM 2</option>
+        </select>
+    </div>
+    <div id="option1-content" class="hidden tcontent">
+        <table border="0" align="center">
+            <!-- cla -->
+            <tr>
+                    <td>DEMC</td>
+                    <td>
+                            <select id="demc">
+                                    <option value="10">Ex</option>
+                                    <option value="9">A</option>
+                                    <option value="8">B</option>
+                                    <option value="7">C</option>
+                                    <option value="6">D</option>
+                                    <option value="5">E</option>
+                            </select>
+                    </td>
+            </tr>
+            
+            <!-- beee -->
+            <tr>
+                    <td>EP</td>
+                    <td>
+                            <select id="ep">
+                                    <option value="10">Ex</option>
+                                    <option value="9">A</option>
+                                    <option value="8">B</option>
+                                    <option value="7">C</option>
+                                    <option value="6">D</option>
+                                    <option value="5">E</option>
+                            </select>
+                    </td>
+            </tr>
+            
+            <!-- pspc -->
+            <tr>
+                    <td>SS</td>
+                    <td>
+                            <select id="ss">
+                                    <option value="10">Ex</option>
+                                    <option value="9">A</option>
+                                    <option value="8">B</option>
+                                    <option value="7">C</option>
+                                    <option value="6">D</option>
+                                    <option value="5">E</option>
+                            </select>
+                    </td>
+            </tr>
+            
+            <!-- egcd -->
+            <tr>
+                    <td>ET</td>
+                    <td>
+                            <select id="et">
+                                    <option value="10">Ex</option>
+                                    <option value="9">A</option>
+                                    <option value="8">B</option>
+                                    <option value="7">C</option>
+                                    <option value="6">D</option>
+                                    <option value="5">E</option>
+                            </select>
+                    </td>
+            </tr>
+            
+            <!-- engl -->
+            <tr>
+                    <td>PDS</td>
+                    <td>
+                            <select id="pds">
+                                    <option value="10">Ex</option>
+                                    <option value="9">A</option>
+                                    <option value="8">B</option>
+                                    <option value="7">C</option>
+                                    <option value="6">D</option>
+                                    <option value="5">E</option>
+                            </select>
+                    </td>
+            </tr>
+            
+            <!-- beeel-lab -->
+            <tr>
+                    <td>EP LAB</td>
+                    <td>
+                            <select id="epl">
+                                    <option value="10">Ex</option>
+                                    <option value="9">A</option>
+                                    <option value="8">B</option>
+                                    <option value="7">C</option>
+                                    <option value="6">D</option>
+                                    <option value="5">E</option>
+                            </select>
+                    </td>
+            </tr>
+            
+            <!-- pspc-lab -->
+            <tr>
+                    <td>ET LAB</td>
+                    <td>
+                            <select id="etl">
+                                    <option value="10">Ex</option>
+                                    <option value="9">A</option>
+                                    <option value="8">B</option>
+                                    <option value="7">C</option>
+                                    <option value="6">D</option>
+                                    <option value="5">E</option>
+                            </select>
+                    </td>
+            </tr>
+            <!-- pspc-lab -->
+            <tr>
+                <td>PDS LAB</td>
+                <td>
+                        <select id="pdsl">
+                                <option value="10">Ex</option>
+                                <option value="9">A</option>
+                                <option value="8">B</option>
+                                <option value="7">C</option>
+                                <option value="6">D</option>
+                                <option value="5">E</option>
+                        </select>
+                </td>
+        </tr>
+        <!-- pspc-lab -->
+        <tr>
+                <td>ILTA</td>
+                <td>
+                        <select id="ilta">
+                                <option value="10">Ex</option>
+                                <option value="9">A</option>
+                                <option value="8">B</option>
+                                <option value="7">C</option>
+                                <option value="6">D</option>
+                                <option value="5">E</option>
+                        </select>
+                </td>
+        </tr>
+    </table>
+    <div class="submit">
+        <button onclick="cseresults1()">Submit</button>
+    </div>
+    <div class="gpa_result1">
+        Your Gpa is <span class="gpa1"></span>.
+    </div>
+    </div>   
+    <div id="option2-content" class="hidden tcontent">
+        <table border="0" align="center">
+                <!-- MM  -->
+                <tr>
+                        <td>MM</td>
+                        <td>
+                                <select id="mm">
+                                        <option value="10">Ex</option>
+                                        <option value="9">A</option>
+                                        <option value="8">B</option>
+                                        <option value="7">C</option>
+                                        <option value="6">D</option>
+                                        <option value="5">E</option>
+                                </select>
+                        </td>
+                </tr>
+                
+                <!-- OOP -->
+                <tr>
+                        <td>OOP</td>
+                        <td>
+                                <select id="oop">
+                                        <option value="10">Ex</option>
+                                        <option value="9">A</option>
+                                        <option value="8">B</option>
+                                        <option value="7">C</option>
+                                        <option value="6">D</option>
+                                        <option value="5">E</option>
+                                </select>
+                        </td>
+                </tr>
+                
+                <!-- EDC -->
+                <tr>
+                        <td>EDC</td>
+                        <td>
+                                <select id="edc">
+                                        <option value="10">Ex</option>
+                                        <option value="9">A</option>
+                                        <option value="8">B</option>
+                                        <option value="7">C</option>
+                                        <option value="6">D</option>
+                                        <option value="5">E</option>
+                                </select>
+                        </td>
+                </tr>
+                
+                <!-- NT -->
+                <tr>
+                        <td>NT</td>
+                        <td>
+                                <select id="nt">
+                                        <option value="10">Ex</option>
+                                        <option value="9">A</option>
+                                        <option value="8">B</option>
+                                        <option value="7">C</option>
+                                        <option value="6">D</option>
+                                        <option value="5">E</option>
+                                </select>
+                        </td>
+                </tr>
+                
+                <!-- OOPL -->
+                <tr>
+                        <td>OOP LAB</td>
+                        <td>
+                                <select id="oopl">
+                                        <option value="10">Ex</option>
+                                        <option value="9">A</option>
+                                        <option value="8">B</option>
+                                        <option value="7">C</option>
+                                        <option value="6">D</option>
+                                        <option value="5">E</option>
+                                </select>
+                        </td>
+                </tr>
+                
+                <!-- C LAB -->
+                <tr>
+                        <td>C LAB</td>
+                        <td>
+                                <select id="cl">
+                                        <option value="10">Ex</option>
+                                        <option value="9">A</option>
+                                        <option value="8">B</option>
+                                        <option value="7">C</option>
+                                        <option value="6">D</option>
+                                        <option value="5">E</option>
+                                </select>
+                        </td>
+                </tr>
+                
+                <!-- ENGL -->
+                <tr>
+                        <td>ENG LAB</td>
+                        <td>
+                                <select id="engl">
+                                        <option value="10">Ex</option>
+                                        <option value="9">A</option>
+                                        <option value="8">B</option>
+                                        <option value="7">C</option>
+                                        <option value="6">D</option>
+                                        <option value="5">E</option>
+                                </select>
+                        </td>
+                </tr>
+                <!-- EDC LAB -->
+                <tr>
+                        <td>EDC LAB</td>
+                        <td>
+                                <select id="edcl">
+                                        <option value="10">Ex</option>
+                                        <option value="9">A</option>
+                                        <option value="8">B</option>
+                                        <option value="7">C</option>
+                                        <option value="6">D</option>
+                                        <option value="5">E</option>
+                                </select>
+                        </td>
+                </tr>
+                <!-- EGD -->
+                <tr>
+                    <td>EGD</td>
+                    <td>
+                            <select id="egd">
+                                    <option value="10">Ex</option>
+                                    <option value="9">A</option>
+                                    <option value="8">B</option>
+                                    <option value="7">C</option>
+                                    <option value="6">D</option>
+                                    <option value="5">E</option>
+                            </select>
+                    </td>
+            </tr>
+        </table>
+        <div class="submit">
+            <button onclick="cseresults2()">Submit</button>
+        </div>
+        <div class="gpa_result2">
+            Your Gpa is <span class="gpa2"></span>.
+        </div>
+    </div>
+    <div id="option3-content" class="hidden">
+        This is content for Option 3.
+    </div>
+</main>
+    <footer>
+        <p>Designed and Developed by Melahs™</p>
+    </footer>
+    <script>
+        let gpa1 = document.querySelector(".gpa1");
+        let gpa_result1= document.querySelector(".gpa_result1");
+        
+        function cseresults1()
+               { gpa_result1.style.display = "block";
+                
+                //subjects values or points 
+                let d = document.getElementById("demc").value*4;
+                let ep = document.getElementById("ep").value*4;
+                let ss = document.getElementById("ss").value*4;
+                let et = document.getElementById("et").value*4;
+                let pd = document.getElementById("pds").value*3;
+                let epl = document.getElementById("epl").value*1.5;
+                let etl = document.getElementById("etl").value*1.5;
+                let pdsl = document.getElementById("pdsl").value*1.5;
+                let il = document.getElementById("ilta").value*1;
+
+                //final calculations 
+                let sum = d+ep+ss+et+pd+epl+etl+pdsl+il;
+                let g = sum/24.5;
+                
+                //result 
+                gpa1.innerHTML = g;}
+
+    let gpa2 = document.querySelector(".gpa2");
+    let gpa_result2= document.querySelector(".gpa_result2");
+    
+    function cseresults2()
+    {
+                gpa_result2.style.display = "block";
+            
+            //subjects values or points 
+            let e = document.getElementById("mm").value*4;
+            let m = document.getElementById("oop").value*2;
+            let p = document.getElementById("edc").value*4;
+            let pl = document.getElementById("nt").value*4;
+            let c = document.getElementById("oopl").value*1.5;
+            let cl = document.getElementById("cl").value*1.5;
+            let t = document.getElementById("engl").value*2.5;
+            let d = document.getElementById("edcl").value*1.5;
+            let ed = document.getElementById("egd").value*2.5;
+
+
+            //final calculations 
+            let sum = e+m+p+pl+c+cl+t+d+ed;
+            let g = sum/23.5;
+            
+            //result 
+            gpa2.innerHTML = g;
+        }
+
+    
+        const selectOption = document.getElementById('select-option');
+        const option1Content = document.getElementById('option1-content');
+        const option2Content = document.getElementById('option2-content');
+        const option3Content = document.getElementById('option3-content');
+
+        selectOption.addEventListener('change', () => {
+            option1Content.classList.add('hidden');
+            option2Content.classList.add('hidden');
+            option3Content.classList.add('hidden');
+
+            const selectedOption = selectOption.value;
+
+            if (selectedOption === 'option1') {
+                option1Content.classList.remove('hidden');
+            } else if (selectedOption === 'option2') {
+                option2Content.classList.remove('hidden');
+            } else if (selectedOption === 'option3') {
+                option3Content.classList.remove('hidden');
+            }
+        });
+</script>
+</body>
+
+</html>

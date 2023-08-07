@@ -14,15 +14,15 @@ function result()
     }
     if(document.getElementById("year").value == 1 && document.getElementById("branch").value == 3)
     {
-        window.location.href="cse.html";
+        window.location.href="eee.html";
     }
     if(document.getElementById("year").value == 1 && document.getElementById("branch").value == 4)
     {
-        window.location.href="cse.html";
+        window.location.href="ce.html";
     }
     if(document.getElementById("year").value == 1 && document.getElementById("branch").value == 5)
     {
-        window.location.href="cse.html";
+        window.location.href="me.html";
     }
 }
 

@@ -1,0 +1,103 @@
+body{
+    background-image: url(pic.png);
+    background-repeat: no-repeat;
+    background-size: 150%;
+    display: flex;
+    flex-direction: column;
+    min-height: 98vh;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+}
+.banner
+{
+    width: 100%;
+    text-align: center;
+    background-image: linear-gradient(to right, aqua ,rgb(22, 153, 197));
+    height: 100px;
+    padding-top: 30px;
+    border: 1px solid #14ef6c;
+    
+}
+.content
+{
+    width: 100%;
+    text-align: center;
+    background-image: linear-gradient(to right, aqua ,rgb(0, 162, 255));
+    height: 100%;
+    padding: 10px 0;
+    margin: 10px auto 0 auto;
+    border: 1px solid #0cce4d;
+    
+}
+.tcontent
+{
+    width: 100%;
+    text-align: left;
+    background-image: linear-gradient(to right, aqua ,rgb(0, 162, 255));
+    height: 100%;
+    padding: 10px 0;
+    margin: 10px auto 0 auto;
+    border: 1px solid #0cce4d;
+}
+.hidden {
+    display: none;
+}
+.inp
+{
+    width: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    line-height: 24px;
+    margin-bottom: 10px;
+}
+.submit
+{
+    text-align: center;
+    margin: 10px;
+}
+td
+{
+    padding: 10px;
+    font-size: large;
+}
+.gpa_result1{
+    padding: 20px 0 10px 0;
+    text-align: center;
+    display: none;
+}
+.gpa_result2{
+    padding: 20px 0 10px 0;
+    text-align: center;
+    display: none;
+}
+button{
+    background: #00d1d1;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid #0ff;
+}
+footer
+{
+    width: 100%;
+    text-align: center;
+    background-image: linear-gradient(to right, aqua ,rgb(0, 162, 255));
+    height: 100%;
+    padding: 10px 0;
+    margin: 10px auto  auto;
+    border: 1px solid #0cce4d;
+}
+.foot
+{
+    height: 30px;
+}

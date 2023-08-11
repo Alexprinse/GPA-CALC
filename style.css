@@ -1,10 +1,12 @@
 body{
-    background-image: url(pic.png);
+    background-image: url("images/pic.png");
     background-repeat: no-repeat;
-    background-size: 175%;
+    background-size: 150%;
     display: flex;
     flex-direction: column;
     min-height: 98vh;
+    font-family: 'Happy Monkey', cursive;
+    text-shadow: 0px 0px 3px white;
 }
 
 main {
@@ -96,8 +98,11 @@ footer
     padding: 10px 0;
     margin: 10px auto  auto;
     border: 1px solid #0cce4d;
+    font-style: italic;
+    margin: 40px auto 20px;
 }
 .foot
 {
     height: 30px;
+    
 }

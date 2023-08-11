@@ -102,10 +102,10 @@ footer
     font-style: italic;
     margin: 40px auto 20px;
 }
-.foot
+#uc
 {
-    height: 30px;
-    
+    margin: 0 auto;
+    width: fit-content;
 }
 @media screen and (max-width: 768px) {
 body

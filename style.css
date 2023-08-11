@@ -7,6 +7,7 @@ body{
     min-height: 98vh;
     font-family: 'Happy Monkey', cursive;
     text-shadow: 0px 0px 3px white;
+    font-size: 16px;
 }
 
 main {
@@ -106,3 +107,13 @@ footer
     height: 30px;
     
 }
+@media screen and (max-width: 768px) {
+body
+{
+    font-size : 10px;
+}
+.inp
+{
+    width: 200px;
+}
+}  

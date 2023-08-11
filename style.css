@@ -102,10 +102,10 @@ footer
     font-style: italic;
     margin: 40px auto 20px;
 }
-#uc
+.img-c
 {
     margin: 0 auto;
-    width: fit-content;
+    width: 100%;
 }
 @media screen and (max-width: 768px) {
 body

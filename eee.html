@@ -28,7 +28,7 @@
         <table border="0" align="center">
             <!-- cla -->
             <tr>
-                    <td>D</td>
+                    <td>DEMC</td>
                     <td>
                             <select id="demc">
                                     <option value="10">Ex</option>
@@ -46,21 +46,6 @@
                     <td>EP</td>
                     <td>
                             <select id="ep">
-                                    <option value="10">Ex</option>
-                                    <option value="9">A</option>
-                                    <option value="8">B</option>
-                                    <option value="7">C</option>
-                                    <option value="6">D</option>
-                                    <option value="5">E</option>
-                            </select>
-                    </td>
-            </tr>
-            
-            <!-- pspc -->
-            <tr>
-                    <td>SS</td>
-                    <td>
-                            <select id="ss">
                                     <option value="10">Ex</option>
                                     <option value="9">A</option>
                                     <option value="8">B</option>
@@ -91,6 +76,20 @@
                     <td>PDS</td>
                     <td>
                             <select id="pds">
+                                    <option value="10">Ex</option>
+                                    <option value="9">A</option>
+                                    <option value="8">B</option>
+                                    <option value="7">C</option>
+                                    <option value="6">D</option>
+                                    <option value="5">E</option>
+                            </select>
+                    </td>
+            </tr>
+            <!-- egcd -->
+            <tr>
+                    <td>EGCD</td>
+                    <td>
+                            <select id="egcd">
                                     <option value="10">Ex</option>
                                     <option value="9">A</option>
                                     <option value="8">B</option>
@@ -185,9 +184,9 @@
                 
                 <!-- OOP -->
                 <tr>
-                        <td>OOP</td>
+                        <td>DLD</td>
                         <td>
-                                <select id="oop">
+                                <select id="dld">
                                         <option value="10">Ex</option>
                                         <option value="9">A</option>
                                         <option value="8">B</option>
@@ -230,9 +229,9 @@
                 
                 <!-- OOPL -->
                 <tr>
-                        <td>OOP LAB</td>
+                        <td>DLD LAB</td>
                         <td>
-                                <select id="oopl">
+                                <select id="dldl">
                                         <option value="10">Ex</option>
                                         <option value="9">A</option>
                                         <option value="8">B</option>
@@ -288,9 +287,9 @@
                 </tr>
                 <!-- EGD -->
                 <tr>
-                    <td>EGD</td>
+                    <td>AI</td>
                     <td>
-                            <select id="egd">
+                            <select id="ai">
                                     <option value="10">Ex</option>
                                     <option value="9">A</option>
                                     <option value="8">B</option>
@@ -325,7 +324,7 @@
                 //subjects values or points 
                 let d = document.getElementById("demc").value*4;
                 let ep = document.getElementById("ep").value*4;
-                let ss = document.getElementById("ss").value*4;
+                let ss = document.getElementById("egcd").value*2.5;
                 let et = document.getElementById("et").value*4;
                 let pd = document.getElementById("pds").value*3;
                 let epl = document.getElementById("epl").value*1.5;
@@ -335,7 +334,7 @@
 
                 //final calculations 
                 let sum = d+ep+ss+et+pd+epl+etl+pdsl+il;
-                let g = sum/24.5;
+                let g = sum/23;
                 
                 //result 
                 gpa1.innerHTML = g;}
@@ -349,19 +348,19 @@
             
             //subjects values or points 
             let e = document.getElementById("mm").value*4;
-            let m = document.getElementById("oop").value*2;
+            let m = document.getElementById("dld").value*4;
             let p = document.getElementById("edc").value*4;
             let pl = document.getElementById("nt").value*4;
-            let c = document.getElementById("oopl").value*1.5;
+            let c = document.getElementById("dldl").value*1.5;
             let cl = document.getElementById("cl").value*1.5;
             let t = document.getElementById("engl").value*2.5;
             let d = document.getElementById("edcl").value*1.5;
-            let ed = document.getElementById("egd").value*2.5;
+            let ed = document.getElementById("ai").value*1;
 
 
             //final calculations 
             let sum = e+m+p+pl+c+cl+t+d+ed;
-            let g = sum/23.5;
+            let g = sum/24;
             
             //result 
             gpa2.innerHTML = g;

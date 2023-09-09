@@ -30,7 +30,7 @@ function result()
     }
     if(document.getElementById("year").value == 2 && document.getElementById("branch").value == 2)
     {
-        window.location.href="underc.html";
+        window.location.href="ece2.html";
     }
     if(document.getElementById("year").value == 2 && document.getElementById("branch").value == 3)
     {

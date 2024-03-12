@@ -6,9 +6,6 @@
     <meta name="keywords" content="HTML,CSS,JavaScript">
     <meta charset="UTF-8">
     <title>GPA CALCULATOR</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Happy+Monkey&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="rg (1).png">
     <script src="script.js"></script>
@@ -25,6 +22,7 @@
             <option value="none">----</option>
             <option value="option1">SEM 1</option>
             <option value="option2">SEM 2</option>
+            <option value="option3">SEM 3</option>
         </select>
     </div>
     <div id="option1-content" class="hidden tcontent">
@@ -311,8 +309,147 @@
             Your Gpa is <span class="gpa2"></span>.
         </div>
     </div>
-    <div id="option3-content" class="hidden">
-        This is content for Option 3.
+    <div id="option3-content" class="hidden tcontent">
+        <table border="0" align="center">
+                <!-- MM  -->
+                <tr>
+                        <td>AEC</td>
+                        <td>
+                                <select id="aec">
+                                        <option value="10">Ex</option>
+                                        <option value="9">A</option>
+                                        <option value="8">B</option>
+                                        <option value="7">C</option>
+                                        <option value="6">D</option>
+                                        <option value="5">E</option>
+                                </select>
+                        </td>
+                </tr>
+                
+                <!-- OOP -->
+                <tr>
+                        <td>CS</td>
+                        <td>
+                                <select id="cs">
+                                        <option value="10">Ex</option>
+                                        <option value="9">A</option>
+                                        <option value="8">B</option>
+                                        <option value="7">C</option>
+                                        <option value="6">D</option>
+                                        <option value="5">E</option>
+                                </select>
+                        </td>
+                </tr>
+                
+                <!-- EDC -->
+                <tr>
+                        <td>DLD</td>
+                        <td>
+                                <select id="dld">
+                                        <option value="10">Ex</option>
+                                        <option value="9">A</option>
+                                        <option value="8">B</option>
+                                        <option value="7">C</option>
+                                        <option value="6">D</option>
+                                        <option value="5">E</option>
+                                </select>
+                        </td>
+                </tr>
+                
+                <!-- NT -->
+                <tr>
+                        <td>DSP</td>
+                        <td>
+                                <select id="dsp">
+                                        <option value="10">Ex</option>
+                                        <option value="9">A</option>
+                                        <option value="8">B</option>
+                                        <option value="7">C</option>
+                                        <option value="6">D</option>
+                                        <option value="5">E</option>
+                                </select>
+                        </td>
+                </tr>
+                
+                <!-- OOPL -->
+                <tr>
+                        <td>PRV</td>
+                        <td>
+                                <select id="prv">
+                                        <option value="10">Ex</option>
+                                        <option value="9">A</option>
+                                        <option value="8">B</option>
+                                        <option value="7">C</option>
+                                        <option value="6">D</option>
+                                        <option value="5">E</option>
+                                </select>
+                        </td>
+                </tr>
+                
+                <!-- C LAB -->
+                <tr>
+                        <td>AEC LAB</td>
+                        <td>
+                                <select id="aecl">
+                                        <option value="10">Ex</option>
+                                        <option value="9">A</option>
+                                        <option value="8">B</option>
+                                        <option value="7">C</option>
+                                        <option value="6">D</option>
+                                        <option value="5">E</option>
+                                </select>
+                        </td>
+                </tr>
+                
+                <!-- ENGL -->
+                <tr>
+                        <td>DLD LAB</td>
+                        <td>
+                                <select id="dldl">
+                                        <option value="10">Ex</option>
+                                        <option value="9">A</option>
+                                        <option value="8">B</option>
+                                        <option value="7">C</option>
+                                        <option value="6">D</option>
+                                        <option value="5">E</option>
+                                </select>
+                        </td>
+                </tr>
+                <!-- EDC LAB -->
+                <tr>
+                        <td>DSP LAB</td>
+                        <td>
+                                <select id="dspl">
+                                        <option value="10">Ex</option>
+                                        <option value="9">A</option>
+                                        <option value="8">B</option>
+                                        <option value="7">C</option>
+                                        <option value="6">D</option>
+                                        <option value="5">E</option>
+                                </select>
+                        </td>
+                </tr>
+                <!-- EGD -->
+                <tr>
+                    <td>IOT LAB</td>
+                    <td>
+                            <select id="iotl">
+                                    <option value="10">Ex</option>
+                                    <option value="9">A</option>
+                                    <option value="8">B</option>
+                                    <option value="7">C</option>
+                                    <option value="6">D</option>
+                                    <option value="5">E</option>
+                            </select>
+                    </td>
+            </tr>
+        </table>
+        <div class="submit">
+            <button onclick="cseresults3()">Submit</button>
+        </div>
+        <div class="gpa_result3">
+            Your Gpa is <span class="gpa3"></span>.
+        </div>
     </div>
 </main>
     <footer>
@@ -368,6 +505,33 @@
             
             //result 
             gpa2.innerHTML = g;
+        }
+
+        let gpa3 = document.querySelector(".gpa3");
+        let gpa_result3= document.querySelector(".gpa_result3");
+    
+    function cseresults3()
+    {
+                gpa_result3.style.display = "block";
+            
+            //subjects values or points 
+            let e = document.getElementById("aec").value*4;
+            let m = document.getElementById("cs").value*3;
+            let p = document.getElementById("dld").value*4;
+            let pl = document.getElementById("dsp").value*4;
+            let c = document.getElementById("prv").value*3;
+            let cl = document.getElementById("aecl").value*1.5;
+            let t = document.getElementById("dldl").value*1.5;
+            let d = document.getElementById("dspl").value*1.5;
+            let ed = document.getElementById("iotl").value*1.5;
+
+
+            //final calculations 
+            let sum = e+m+p+pl+c+cl+t+d+ed;
+            let g = sum/24;
+            
+            //result 
+            gpa3.innerHTML = g;
         }
 
     

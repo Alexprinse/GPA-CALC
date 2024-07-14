@@ -70,11 +70,11 @@ function result()
         }
     if(document.getElementById("year").value == 4 && document.getElementById("branch").value == 2)
         {
-            window.location.href="underc.html";
+            window.location.href="ece4.html";
         }
     if(document.getElementById("year").value == 4 && document.getElementById("branch").value == 3)
         {
-            window.location.href="underc.html";
+            window.location.href="eee4.html";
         }
     if(document.getElementById("year").value == 4 && document.getElementById("branch").value == 4)
         {
@@ -82,7 +82,7 @@ function result()
         }
     if(document.getElementById("year").value == 4 && document.getElementById("branch").value == 5)
         {
-            window.location.href="underc.html";
+            window.location.href="me4.html";
         }
 }
 

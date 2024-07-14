@@ -74,7 +74,6 @@
                     </td>
             </tr>
             
-            <!-- DSP -->
             <tr>
                     <td>IC</td>
                     <td>
@@ -93,7 +92,7 @@
             <tr>
                     <td>MMCN LAB</td>
                     <td>
-                            <select id="aecl">
+                            <select id="mmcnl">
                                     <option value="10">Ex</option>
                                     <option value="9">A</option>
                                     <option value="8">B</option>
@@ -108,7 +107,7 @@
             <tr>
                     <td>CMS LAB</td>
                     <td>
-                            <select id="dldl">
+                            <select id="cmsl">
                                     <option value="10">Ex</option>
                                     <option value="9">A</option>
                                     <option value="8">B</option>
@@ -122,7 +121,7 @@
             <tr>
                 <td>ENG LAB</td>
                 <td>
-                        <select id="dspl">
+                        <select id="engl">
                                 <option value="10">Ex</option>
                                 <option value="9">A</option>
                                 <option value="8">B</option>
@@ -136,7 +135,7 @@
         <tr>
                 <td>RFME LAB</td>
                 <td>
-                        <select id="iotl">
+                        <select id="rfmel">
                                 <option value="10">Ex</option>
                                 <option value="9">A</option>
                                 <option value="8">B</option>
@@ -158,7 +157,7 @@
         <table border="0" align="center">
                 <!-- CS-1 -->
                 <tr>
-                        <td>CS-1</td>
+                        <td>CMS</td>
                         <td>
                                 <select id="cs1">
                                         <option value="10">Ex</option>
@@ -301,14 +300,14 @@
                 let ep = document.getElementById("cn").value*3;
                 let ss = document.getElementById("cms").value*4;
                 let et = document.getElementById("ic").value*1;
-                let pdsl = document.getElementById("aecl").value*1.5;
-                let epl = document.getElementById("dldl").value*1.5;
-                let etl = document.getElementById("dspl").value*1.5;
-                let il = document.getElementById("iotl").value*1.5;
+                let pdsl = document.getElementById("mmcnl").value*1.5;
+                let epl = document.getElementById("cmsl").value*1.5;
+                let etl = document.getElementById("engl").value*1.5;
+                let il = document.getElementById("rfmel").value*2.5;
 
                 //final calculations 
-                let sum = d+ep+ss+et+pd+epl+etl+pdsl+il;
-                let g = sum/24;
+                let sum = d+ep+ss+et+pdsl+epl+etl+il;
+                let g = sum/19;
                 
                 //result 
                 gpa1.innerHTML = g;}

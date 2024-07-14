@@ -157,7 +157,7 @@
         <table border="0" align="center">
                 <!-- CS-1 -->
                 <tr>
-                        <td>CMS</td>
+                        <td>PDI</td>
                         <td>
                                 <select id="cs1">
                                         <option value="10">Ex</option>
@@ -172,7 +172,7 @@
                 
                 <!-- DSD -->
                 <tr>
-                        <td>DSD</td>
+                        <td>E1</td>
                         <td>
                                 <select id="dsd">
                                         <option value="10">Ex</option>
@@ -187,7 +187,7 @@
                 
                 <!-- LIC -->
                 <tr>
-                        <td>LIC</td>
+                        <td>E2</td>
                         <td>
                                 <select id="lic">
                                         <option value="10">Ex</option>
@@ -202,7 +202,7 @@
                 
                 <!-- EWGM -->
                 <tr>
-                        <td>EWGM</td>
+                        <td>OE1</td>
                         <td>
                                 <select id="ewgm">
                                         <option value="10">Ex</option>
@@ -217,7 +217,7 @@
                 
                 <!-- CS1L -->
                 <tr>
-                        <td>CS-1 LAB</td>
+                        <td>OE2</td>
                         <td>
                                 <select id="cs1l">
                                         <option value="10">Ex</option>
@@ -232,7 +232,7 @@
                 
                 <!-- DSD LAB -->
                 <tr>
-                        <td>DSD LAB</td>
+                        <td>ENG LAB</td>
                         <td>
                                 <select id="dsdl">
                                         <option value="10">Ex</option>
@@ -247,23 +247,9 @@
                 
                 <!-- LICL -->
                 <tr>
-                        <td>LIC LAB</td>
+                        <td>MP II</td>
                         <td>
                                 <select id="licl">
-                                        <option value="10">Ex</option>
-                                        <option value="9">A</option>
-                                        <option value="8">B</option>
-                                        <option value="7">C</option>
-                                        <option value="6">D</option>
-                                        <option value="5">E</option>
-                                </select>
-                        </td>
-                </tr>
-                <!-- ROBOTICS LAB -->
-                <tr>
-                        <td>R LAB</td>
-                        <td>
-                                <select id="rl">
                                         <option value="10">Ex</option>
                                         <option value="9">A</option>
                                         <option value="8">B</option>
@@ -320,19 +306,18 @@
                 gpa_result2.style.display = "block";
             
             //subjects values or points 
-            let e = document.getElementById("cs1").value*4;
-            let m = document.getElementById("dsd").value*4;
-            let p = document.getElementById("lic").value*4;
-            let pl = document.getElementById("ewgm").value*4;
-            let c = document.getElementById("cs1l").value*1.5;
+            let e = document.getElementById("cs1").value*1;
+            let m = document.getElementById("dsd").value*3;
+            let p = document.getElementById("lic").value*3;
+            let pl = document.getElementById("ewgm").value*3;
+            let c = document.getElementById("cs1l").value*3;
             let cl = document.getElementById("dsdl").value*1.5;
             let t = document.getElementById("licl").value*1.5;
-            let d = document.getElementById("rl").value*2.5;
 
 
             //final calculations 
-            let sum = e+m+p+pl+c+cl+t+d;
-            let g = sum/23;
+            let sum = e+m+p+pl+c+cl+t;
+            let g = sum/16;
             
             //result 
             gpa2.innerHTML = g;

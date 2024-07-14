@@ -64,5 +64,25 @@ function result()
     {
         window.location.href="me3.html";
     }
+    if(document.getElementById("year").value == 4 && document.getElementById("branch").value == 1)
+        {
+            window.location.href="cse4.html";
+        }
+    if(document.getElementById("year").value == 4 && document.getElementById("branch").value == 2)
+        {
+            window.location.href="underc.html";
+        }
+    if(document.getElementById("year").value == 4 && document.getElementById("branch").value == 3)
+        {
+            window.location.href="underc.html";
+        }
+    if(document.getElementById("year").value == 4 && document.getElementById("branch").value == 4)
+        {
+            window.location.href="ce4.html";
+        }
+    if(document.getElementById("year").value == 4 && document.getElementById("branch").value == 5)
+        {
+            window.location.href="underc.html";
+        }
 }
 
